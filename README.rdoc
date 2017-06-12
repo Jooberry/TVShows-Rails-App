@@ -1,28 +1,29 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails API Homework
 
-Things you may want to cover:
+Create a Rails app called shows_api. Your API should return and repond to JSON (i.e. no HTML views required)
 
-* Ruby version
+The INDEX route should be localhost:3000/api/shows
 
-* System dependencies
+It's going to have a resource called Shows to manage TV shows and films.
 
-* Configuration
+You only have to implement an INDEX and CREATE in the ShowsController (i.e not all the RESTful routes)
 
-* Database creation
+The Show resource should have:
 
-* Database initialization
+title:string
+series:integer
+description:text
+image:string
+programmeID:string
+Example Show
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+{
+  "title": "The Great British Bake Off",
+  "series": 7,
+  "description": "Master bakers Mary & Paul and the incomparable presenting duo of Mel & Sue are back for another interesting series about baking cakes.",
+  "image": "placeholder.jpg",
+  "programmeID": "b013pqnm" 
+}
+Create some shows in your seeds file.
