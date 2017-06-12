@@ -26,4 +26,5 @@ Example Show
   "image": "placeholder.jpg",
   "programmeID": "b013pqnm" 
 }
+
 Create some shows in your seeds file.
